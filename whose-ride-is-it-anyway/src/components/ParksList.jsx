@@ -5,16 +5,17 @@ export default function ParksList() {
          <div>(
         <h6>List of Parks</h6>
 
-        <div className='parks-card'>
-            <img src="" alt="" />
-            <p>NAME OF PARK</p>
-            <p># of LIKES</p>
-            <button onClick={handleLike}>HEART ICON</button>
-            <p># of Deaths</p>
 
+
+       {props.parksArr.map((park) => (
+        <div className="park-card" onClick={() => showPark(park)}>
+          <img style={{ display: "block" }} src={park.img} alt={park.name} />
+          <h3>{park.name}</h3>
+          <p>Likes: {park.likes}</p>
+          <button>LIKE ICON</button>
+          <p>Deaths: {park.deaths}</p>
         </div>
-        
-
+      ))}
 
 
             

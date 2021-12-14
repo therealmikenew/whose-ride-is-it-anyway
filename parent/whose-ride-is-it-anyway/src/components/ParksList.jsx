@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 export default function ParksList(props) {
 
     
-    // const [count, setCount] = useState({park.likes}])
+   
 
   
-
     const showPark = (park) => {
       props.history.push(`/allparks/${park.id}`)
     }
@@ -16,7 +15,7 @@ export default function ParksList(props) {
          <div>(
         <h6>List of Parks</h6>
 
-       {props.parks.map((park) => (
+       {props.parks.map((park) => ( 
           
         <div className="park-card" >
          

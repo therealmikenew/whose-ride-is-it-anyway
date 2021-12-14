@@ -8,7 +8,7 @@ function Home(props) {
         <img 
         style={{ display: 'block', maxWidth: '50%' }}
         src="https://usercontent.one/wp/www.chernobyl.one/wp-content/uploads/2020/05/Swimming-City-Park-08.jpg"
-        alt="photo"
+        alt="park"
         />
       </div>
       <h1> Whose Ride is it Anyway?</h1>

@@ -16,13 +16,11 @@ function ParkDetails (props) {
 
         if (clicked === "♡") {
             setClicked("❤") 
-            // setCount({park.likes}++)
+            selectedPark.likes++
         } else {
             setClicked("♡")
-            // setCount({park.likes}++)
-
-        }
-        
+            selectedPark.likes--
+        }  
     }
 
   return selectedPark ? (
@@ -32,12 +30,13 @@ function ParkDetails (props) {
         <h1>{selectedPark.name}</h1>
       </div>
       <div className='cardInfo'>
-      <h2>where:{selectedPark.location}</h2>
+      <h2>Location: {selectedPark.location}</h2>
       <h3>number of attractions: {selectedPark.attractionsNumber}</h3>
       <h3>Water attractions: {selectedPark.waterPark}</h3>
-      <h3>Bodycount:{selectedPark.deaths}</h3>
+      <h3>Body count:{selectedPark.deaths}</h3>
+      <span onClick={handleLikes}>{clicked}</span>
       <h3>Likes: {selectedPark.likes}</h3>
-      <button onClick={handleLikes}>{clicked}</button>
+      
 
       </div>
             <Link to="/allparks">

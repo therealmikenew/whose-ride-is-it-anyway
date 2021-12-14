@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //import parks data...
 // import rides from "./Hack_a_Thon/park/rides";
-import "./App.css";
+import "./styles/app.css"
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";

@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.homePage {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+  background-color: navy;
+  min-height: 2em;
+}
+
+.park-card,
+.parkCard,
+.cardHeader,
+.navbar {
+  display: flex;
+}

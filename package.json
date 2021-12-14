@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  },
+  "name": "whose-ride-is-it-anyway",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealmikenew/whose-ride-is-it-anyway.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealmikenew/whose-ride-is-it-anyway/issues"
+  },
+  "homepage": "https://github.com/therealmikenew/whose-ride-is-it-anyway#readme"
+}

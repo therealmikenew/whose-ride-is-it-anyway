@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect }  from "react";
 //import parks data...
 // import rides from "./Hack_a_Thon/park/rides";
 import "./styles/app.css"
@@ -9,6 +9,9 @@ import ParksList from "./components/ParksList";
 import ParkDetails from "./components/ParkDetails";
 
 function App() {
+
+  const [parkData, setParkData] = useState([])
+
   const parks = [
     {
       name: "Rocky Point Amusement Park",
@@ -137,7 +140,18 @@ function App() {
     },
   ];
 
-  console.log(parks);
+
+// useEffect (()=> {
+//   async function getParks () {
+//     const res = await axios.get(OURAPIGOESHERE)
+   //  setParkData(res)
+   //NEED TO REPLACE THE PARKS ARRAY HARDCODED DATA WITH DATA FROM AXIOS CALL AND PASS AS PROPS TO COMPONENTS
+//     getParks()
+//   }
+// }, [])
+
+
+
 
   return (
     <div className="App">

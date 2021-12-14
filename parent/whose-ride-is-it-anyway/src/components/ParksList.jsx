@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 export default function ParksList(props) {
 
     
-    // const [count, setCount] = useState({park.likes}])
+   
 
   
-
     const showPark = (park) => {
       props.history.push(`/allparks/${park.id}`)
     }
@@ -15,11 +14,12 @@ export default function ParksList(props) {
     return (
          <div>
 
-       {props.parks.map((park) => (
+       {props.parks.map((park) => ( 
           
         <div className="park-card" >
          
-          <img onClick={() => showPark(park)} src={park.image} alt={park.name} />
+          <img width="500px" onClick={() => showPark(park)} src={park.image} alt={park.name} />
+          
           <h3 style={{ color: 'rgb(193, 29, 37)' }}>{park.name}</h3>
           <p>Likes: {park.likes}</p>
           

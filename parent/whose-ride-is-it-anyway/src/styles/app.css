@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
   background-color: rgb(6, 39, 50);
 }
 .App {
   text-align: center;
+  background-color: rgb(6, 39, 50);
 }
 
 .homePage {
@@ -18,6 +21,7 @@ header {
   color: rgb(193, 29, 37);
   background-color: rgb(6, 39, 50);
   margin: 0px;
+  font-family: 'Lobster', cursive;
 }
 
 .navbar,
@@ -33,7 +37,6 @@ header {
   text-decoration: none;
   color: rgb(193, 29, 37);
   font-weight: bold;
-  margin-left: 0.5em;
 }
 
 .park-card,
@@ -50,4 +53,9 @@ header {
 .parkCard {
   background-color: rgb(98, 195, 164);
   border: 3px solid rgb(193, 29, 37);
+  width: 50%;
+}
+
+.listImg {
+  height: 10px;
 }

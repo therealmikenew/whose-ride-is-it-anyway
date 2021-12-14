@@ -1,22 +1,22 @@
 import React, {useState} from 'react'
 
-export default function ParksList() {
+export default function ParksList(props) {
 
     const [clicked, setClicked] = useState("♡")
-    const [count, setCount] = useState({park.likes}])
+    // const [count, setCount] = useState({park.likes}])
 
-    const handleLikes = () => {
+    // const handleLikes = () => {
 
-        if (clicked === "♡") {
-            setClicked("❤") 
-            setCount({park.likes}++)
-        } else {
-            setClicked("♡")
-            setCount({park.likes}++)
+    //     if (clicked === "♡") {
+    //         setClicked("❤") 
+    //         setCount({park.likes}++)
+    //     } else {
+    //         setClicked("♡")
+    //         setCount({park.likes}++)
 
-        }
+    //     }
         
-    }
+    // }
 
     const showPark = (park) => {
       props.history.push(`/listings/${park.id}`)
@@ -31,8 +31,8 @@ export default function ParksList() {
         <div className="park-card" onClick={() => showPark(park)}>
           <img style={{ display: "block" }} src={park.img} alt={park.name} />
           <h3>{park.name}</h3>
-          <p>Likes: {count}</p>
-          <button onClick={handleLikes}>{clicked}</button>
+          {/* <p>Likes: {count}</p>
+          <button onClick={handleLikes}>{clicked}</button> */}
           <p>Deaths: {park.deaths}</p>
         </div>
       ))}

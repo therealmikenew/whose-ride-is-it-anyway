@@ -18,11 +18,11 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route
             exact
-            path="/listings"
+            path="/allparks"
             component={(props) => <ParksList {...props} PASSPARKSDATA />}
           />
           <Route
-            path="/parklistings/:id"
+            path="/allparks/:id"
             component={(props) => <ParkDetails {...props} PASSPARKSDATA />}
           />
           {/* <Route path="/new" component={(props) => <AddParksPage {...props} newPark={newPark} handleChange={handleChange} addBoat={addBoat}/>} */}

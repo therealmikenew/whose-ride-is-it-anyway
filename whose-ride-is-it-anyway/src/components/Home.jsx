@@ -6,8 +6,8 @@ function Home(props) {
     <div className='homePage'>
       <div>
         <img 
-        style={{ display: 'block', maxWidth: '100%' }}
-        src="https://files.slack.com/files-pri/T0351JZQ0-F02QHKSUZ8V/fran-6-flags-16x20.jpg"
+        style={{ display: 'block', maxWidth: '50%' }}
+        src="https://usercontent.one/wp/www.chernobyl.one/wp-content/uploads/2020/05/Swimming-City-Park-08.jpg"
         alt="photo"
         />
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //import parks data...
-import rides from "./Hack_a_Thon/park/rides";
+import rides from "../Hack_a_Thon/park/rides";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -22,6 +22,7 @@ function App() {
       deaths: 12,
       likes: 742,
       id: 100,
+      comments: [{ post: "this sucks" }, { post: "AWESOME!" }],
     },
 
     {

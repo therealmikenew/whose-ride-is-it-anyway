@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom"
 
 function ParkDetails (props) {
   const [selectedPark, setPark] = useState('')
+  const [clicked, setClicked] = useState("♡")
 
   useEffect(() => {
     let selectedPark = props.parks.find(
@@ -10,10 +12,23 @@ function ParkDetails (props) {
     setPark(selectedPark)
   }, [])
   
+    const handleLikes = () => {
+
+        if (clicked === "♡") {
+            setClicked("❤") 
+            // setCount({park.likes}++)
+        } else {
+            setClicked("♡")
+            // setCount({park.likes}++)
+
+        }
+        
+    }
+
   return selectedPark ? (
     <div className='parkCard'>
       <div className='cardHeader'>
-        <img src={selectedPark.img} alt='Park Photo' />
+        <img src={selectedPark.image} alt='Park Photo' />
         <h1>{selectedPark.name}</h1>
       </div>
       <div className='cardInfo'>
@@ -21,9 +36,13 @@ function ParkDetails (props) {
       <h3>number of attractions: {selectedPark.attractionsNumber}</h3>
       <h3>Water attractions: {selectedPark.waterPark}</h3>
       <h3>Bodycount:{selectedPark.deaths}</h3>
-      <h3>Likes: </h3>
+      <h3>Likes: {selectedPark.likes}</h3>
+      <button onClick={handleLikes}>{clicked}</button>
 
       </div>
+            <Link to="/allparks">
+        <button style={{ background: "gray" }}>Listings</button>
+      </Link>
     </div>
   ) : null;
 }

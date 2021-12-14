@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //import parks data...
-import rides from "./Hack_a_Thon/park/rides";
+// import rides from "./Hack_a_Thon/park/rides";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -18,7 +18,7 @@ function App() {
       attractionsNumber: "24",
       water: "YES (1)",
       image:
-        "https://en.wikipedia.org/wiki/Rocky_Point_Amusement_Park#/media/File:Amusement_Center,_Rocky_Point_Park,_R.I_(79847).jpg",
+        "https://www.denverpost.com/wp-content/uploads/2021/08/TDP-Z-defiance-01.jpg?w=910",
       deaths: 12,
       likes: 742,
       id: 100,
@@ -154,7 +154,7 @@ function App() {
           />
           <Route
             path="/allparks/:id"
-            component={(props) => <ParkDetails {...props} PASSPARKSDATA />}
+            component={(props) => <ParkDetails {...props} parks={parks} />}
           />
           {/* <Route path="/new" component={(props) => <AddParksPage {...props} newPark={newPark} handleChange={handleChange} addBoat={addBoat}/>} */}
         </Switch>

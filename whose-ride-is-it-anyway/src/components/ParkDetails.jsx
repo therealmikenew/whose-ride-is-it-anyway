@@ -17,10 +17,11 @@ function ParkDetail (props) {
         <h1>{selectedPark.name}</h1>
       </div>
       <div className='cardInfo'>
-      <h2>where:{selectedPark.address}</h2>
-      <h3>number of attractions: {selectedPark.attractions}</h3>
+      <h2>where:{selectedPark.location}</h2>
+      <h3>number of attractions: {selectedPark.attractionsNumber}</h3>
       <h3>Water attractions: {selectedPark.waterPark}</h3>
-      <h3>Bodycount:{selectedPark.death}</h3>
+      <h3>Bodycount:{selectedPark.deaths}</h3>
+      <h3>Likes: </h3>
 
       </div>
     </div>

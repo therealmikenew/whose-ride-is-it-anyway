@@ -18,6 +18,10 @@ export default function ParksList() {
         
     }
 
+    const showPark = (park) => {
+      props.history.push(`/listings/${park.id}`)
+    }
+
 
     return (
          <div>(

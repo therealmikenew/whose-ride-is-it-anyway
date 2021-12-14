@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  background-color: rgb(6, 39, 50);
+}
 .App {
   text-align: center;
-  background-color: blue;
+  background-color: rgb(6, 39, 50);
 }
 
 .homePage {
@@ -9,25 +14,48 @@
   flex-wrap: wrap;
   background-color: rgb(98, 195, 164);
 }
+.banner,
+header {
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(193, 29, 37);
+  background-color: rgb(6, 39, 50);
+  margin: 0px;
+  font-family: 'Lobster', cursive;
+}
 
 .navbar,
 .cardHeader {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: rgb(193, 29, 37);
   background-color: rgb(6, 39, 50);
   min-height: 2em;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: rgb(193, 29, 37);
+  font-weight: bold;
+}
+
 .park-card,
 .parkCard,
 .cardHeader,
 .navbar {
-  display: flex;
+  display: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
 }
 
 .park-card,
 .parkCard {
   background-color: rgb(98, 195, 164);
-  border: 1px solid rgb(6, 39, 50);
+  border: 3px solid rgb(193, 29, 37);
+  width: 50%;
+}
+
+.listImg {
+  height: 10px;
 }

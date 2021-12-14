@@ -26,7 +26,7 @@ function ParkDetails (props) {
   return selectedPark ? (
     <div className='parkCard'>
       <div className='cardHeader'>
-        <img src={selectedPark.image} alt='Park Photo' />
+        <img width="500px" src={selectedPark.image} alt='Park Photo' />
         <h1>{selectedPark.name}</h1>
       </div>
       <div className='cardInfo'>

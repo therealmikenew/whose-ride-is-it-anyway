@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function ParkDetail (props) {
+function ParkDetails (props) {
   const [selectedPark, setPark] = useState('')
 
   useEffect(() => {
@@ -27,6 +27,8 @@ function ParkDetail (props) {
     </div>
   ) : null;
 }
+
+export default ParkDetails
 
 /////PseudoCoding
 
@@ -59,3 +61,4 @@ pulled info from API-
 */
 
 //export
+

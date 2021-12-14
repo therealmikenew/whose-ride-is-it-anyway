@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 //import parks data...
-import "./App.css";
-import { Route, Switch } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import ParksList from "./components/ParksList";
-import ParkDetails from "./components/ParkDetails";
+import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import ParksList from './components/ParksList';
+import ParkDetails from './components/ParkDetails';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       </header>
       <main>
         <Switch>
+          npm
           <Route exact path="/" component={Home} />
           <Route
             exact

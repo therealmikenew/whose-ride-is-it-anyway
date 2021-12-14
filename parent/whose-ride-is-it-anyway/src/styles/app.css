@@ -6,13 +6,15 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgb(98, 195, 164);
 }
 
-.navbar {
+.navbar,
+.cardHeader {
   justify-content: space-between;
   align-items: center;
-  color: red;
-  background-color: navy;
+  color: rgb(193, 29, 37);
+  background-color: rgb(6, 39, 50);
   min-height: 2em;
 }
 
@@ -21,4 +23,10 @@
 .cardHeader,
 .navbar {
   display: flex;
+}
+
+.park-card,
+.parkCard {
+  background-color: rgb(98, 195, 164);
+  border: 1px solid rgb(6, 39, 50);
 }

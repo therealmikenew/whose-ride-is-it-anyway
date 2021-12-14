@@ -6,7 +6,7 @@ function ParkDetails (props) {
   const [clicked, setClicked] = useState("♡")
 
   useEffect(() => {
-    let selectedPark = props.parks.find(
+    let selectedPark = props.parkData.find(
       (park) => park.id === parseInt(props.match.params.id)
     )
     setPark(selectedPark)

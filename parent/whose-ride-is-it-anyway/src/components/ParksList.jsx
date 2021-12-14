@@ -2,10 +2,6 @@ import React from 'react'
 
 export default function ParksList(props) {
 
-    
-   
-
-  
     const showPark = (park) => {
       props.history.push(`/allparks/${park.id}`)
     }
@@ -14,7 +10,7 @@ export default function ParksList(props) {
     return (
          <div>
 
-       {props.parks.map((park) => ( 
+       {props.parkData.map((park) => ( 
           
         <div className="park-card" >
          

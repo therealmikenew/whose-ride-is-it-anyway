@@ -1,3 +1,32 @@
+import { useEffect, useState } from 'react';
+
+function ParkDetail (props) {
+  const [selectedPark, setPark] = useState('')
+
+  useEffect(() => {
+    let selectedPark = props.parks.find(
+      (park) => park.id === parseInt(props.match.params.id)
+    )
+    setPark(selectedPark)
+  }, [])
+  
+  return selectedPark ? (
+    <div className='parkCard'>
+      <div className='cardHeader'>
+        <img src={selectedPark.img} alt='Park Photo' />
+        <h1>{selectedPark.name}</h1>
+      </div>
+      <div className='cardInfo'>
+      <h2>where:{selectedPark.address}</h2>
+      <h3>number of attractions: {selectedPark.attractions}</h3>
+      <h3>Water attractions: {selectedPark.waterPark}</h3>
+      <h3>Bodycount:{selectedPark.death}</h3>
+
+      </div>
+    </div>
+  ) : null;
+}
+
 /////PseudoCoding
 
 /* 

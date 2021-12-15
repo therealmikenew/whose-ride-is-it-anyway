@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from "react-router-dom"
 
 export default function ParksList(props) {
 
@@ -21,7 +22,11 @@ export default function ParksList(props) {
           
           <p>Deaths: {park.deaths}</p>
         </div>
+        
       ))}
+      <Link to="/">
+        <button style={{ background: "gray" }}>Home</button>
+      </Link>
 
 
             

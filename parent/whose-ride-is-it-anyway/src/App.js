@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './styles/app.css';
-import { Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import ParksList from './components/ParksList';
-import ParkDetails from './components/ParkDetails';
-import AddParksPage from './components/AddParksPage'
+import React, { useState, useEffect } from "react";
+import "./styles/app.css";
+import { Route, Switch } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import ParksList from "./components/ParksList";
+import ParkDetails from "./components/ParkDetails";
+import AddParksPage from "./components/AddParksPage";
 import axios from "axios";
 
 function App() {
@@ -14,17 +14,15 @@ function App() {
     name: "",
     location: "",
     image: "",
-  })
+  });
 
- useEffect (()=> {
-    async function getParks () {
-      const res = await axios.get("http://localhost:3001/")
-      setParkData(res.data.parks)
+  useEffect(() => {
+    async function getParks() {
+      const res = await axios.get("http://localhost:3001/");
+      setParkData(res.data.parks);
     }
-    getParks()
-  }, [])
-
-
+    getParks();
+  }, []);
 
   const handleNewPark = (e) => {
     setNewPark({ ...newPark, [e.target.name]: e.target.value });
@@ -36,14 +34,11 @@ function App() {
     const addedPark = {
       ...newPark,
       id: parseInt(parkData.length + 1),
-      // price: parseInt(newBoat.price),
     };
     currentParks.push(addedPark);
     setParkData(currentParks);
-    setNewPark({ id: "", name: "", location: "", image: ""  });
+    setNewPark({ id: "", name: "", location: "", image: "" });
   };
-
- 
 
   return (
     <div className="App">
@@ -61,7 +56,9 @@ function App() {
           />
           <Route
             path="/allparks/:id"
-            component={(props) => <ParkDetails {...props} parkData={parkData}  />}
+            component={(props) => (
+              <ParkDetails {...props} parkData={parkData} />
+            )}
           />
           <Route
             path="/new"

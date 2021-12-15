@@ -13,9 +13,9 @@ function ParkDetails (props) {
   }, [])
   
     const handleLikes = () => {
-
         if (clicked === "♡") {
-            setClicked("❤") 
+            setClicked("❤")
+            
             selectedPark.likes++
         } else {
             setClicked("♡")
@@ -26,14 +26,14 @@ function ParkDetails (props) {
   return selectedPark ? (
     <div className='parkCard'>
       <div className='cardHeader'>
-        <img width="500px" src={selectedPark.image} alt='Park Photo' />
-        <h1>{selectedPark.name}</h1>
+        <img width="250px" src={selectedPark.image} alt='Park Photo' />
+        <h2>{selectedPark.name}</h2>
       </div>
       <div className='cardInfo'>
       <h2>Location: {selectedPark.location}</h2>
       <h3>number of attractions: {selectedPark.attractionsNumber}</h3>
       <h3>Water attractions: {selectedPark.waterPark}</h3>
-      <h3>Body count:{selectedPark.deaths}</h3>
+      <h3>Body count: {selectedPark.deaths}</h3>
       <span onClick={handleLikes}>{clicked}</span>
       <h3>Likes: {selectedPark.likes}</h3>
       
@@ -47,36 +47,4 @@ function ParkDetails (props) {
 }
 
 export default ParkDetails
-
-/////PseudoCoding
-
-/* 
-function parkDetails(){
-  use state
-}
-
-Return parkPage
-<div class parkDetail>
-<div park header>
-Photo & name
-</div header>
-<div class info>
-pulled info from API-
-
--max capacity
--hours
--address
--# of rides
--water park y/n
--number of deaths
--likes count (include the ability to change here)
-</div parkDetail>
-
-<div class comments section >
-
-</div comments>
-
-*/
-
-//export
 

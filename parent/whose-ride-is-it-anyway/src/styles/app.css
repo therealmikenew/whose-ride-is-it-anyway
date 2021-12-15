@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body {
   background-color: rgb(6, 39, 50);
@@ -14,13 +14,14 @@ body {
   flex-wrap: wrap;
 }
 .banner,
-header {
+header,
+.cardHeader {
   justify-content: space-around;
   align-items: center;
   color: rgb(193, 29, 37);
   background-color: rgb(6, 39, 50);
   margin: 0px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 .navbar,
@@ -34,6 +35,7 @@ header {
 
 .navbar a {
   text-decoration: none;
+  padding: 10px;
   color: rgb(193, 29, 37);
   font-weight: bold;
 }

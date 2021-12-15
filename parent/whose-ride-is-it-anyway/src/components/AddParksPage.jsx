@@ -10,12 +10,11 @@ export default function AddParksPage(props) {
 
     const newPark = props.newPark;
 
-    console.log(newPark)
-
-    
+   
+ 
         return (
         <div>
-        <h1>Add a New Park!</h1>
+        <h1 style={{ color: 'rgb(193, 29, 37)' }}>Add a New Park!</h1>
         <form onSubmit={handleSubmit}>
         <input
           type="text-area"

@@ -7,7 +7,7 @@ function Nav() {
       <div>
         <Link to='/'>Home</Link>
         <Link to='/allparks'>Parks</Link>
-        {/* <Link to='/new'>Add</Link> */}
+         <Link to="/new">New Park</Link>
       </div>
     </nav>
   )

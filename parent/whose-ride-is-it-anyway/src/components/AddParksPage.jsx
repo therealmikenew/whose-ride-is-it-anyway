@@ -35,7 +35,7 @@ export default function AddParksPage(props) {
         <input
           type="text-area"
           value={newPark.image}
-          onChange={props.handlePark}
+          onChange={props.handleNewPark}
           name={"image"}
           placeholder={"image"}
         />
